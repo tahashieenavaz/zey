@@ -10,7 +10,13 @@
 </head>
 
 <body>
-    {{ $slot }}
+    <x-navbar />
+    <main>
+        <x-container>
+            {{ $slot }}
+        </x-container>
+    </main>
+    <x-footer />
 </body>
 
 </html>
